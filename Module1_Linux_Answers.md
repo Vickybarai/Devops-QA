@@ -3,7 +3,6 @@
 ## Q1. What is Linux? Difference between Linux, UNIX, and Windows?
 
 ### **Answer:**
-
 **Linux:**
 - Linux is an open-source, Unix-like operating system kernel created by Linus Torvalds in 1991
 - It's distributed under the GNU General Public License (GPL)
