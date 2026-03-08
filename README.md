@@ -1,204 +1,490 @@
-# DevOps Interview Preparation Collection
 
-Complete collection of interview questions and answers for DevOps, Linux, Cloud, and Automation roles.
 
-## 📚 Repository Structure
+Linux DevOps Interview Questions — Module-wise, Level & Sequence
 
-```
-Interview_Q&A/
-├── Linux/
-│   ├── Module1-Linux-Fundamentals.md
-│   ├── Module2-File-Management-Permissions.md
-│   ├── Module3-Process-System-Management.md
-│   ├── Module4-Disk-Filesystem-Storage.md
-│   ├── Module5-Networking-Connectivity.md
-│   ├── Module6-Services-Boot-Systemctl.md
-│   ├── Module7-Security-Users-Access.md
-│   ├── Module8-Shell-Scripting.md
-│   ├── Module9-Cron-Jobs-Scheduling.md
-│   └── ...
-├── AWS/ (Coming Soon)
-├── Docker/ (Coming Soon)
-├── Kubernetes/ (Coming Soon)
-├── CI-CD/ (Coming Soon)
-├── Jenkins/ (Coming Soon)
-└── Git/ (Coming Soon)
-```
 
 ---
 
-## 🐧 Linux Modules
+🟩 MODULE 1: Linux Fundamentals (Core Concepts) — Easy / 100–90% ask rate
 
-### Module 1: Linux Fundamentals
-**File:** [Module1-Linux-Fundamentals.md](Linux/Module1-Linux-Fundamentals.md)
-**Questions:** 18 | **Commands:** 60+
+1. What is Linux? Difference between Linux, UNIX, and Windows?
 
-#### Question Index:
-1. [What is Linux?](Linux/Module1-Linux-Fundamentals.md#1-what-is-linux)
-2. [What is the difference between Linux and UNIX?](Linux/Module1-Linux-Fundamentals.md#2-what-is-the-difference-between-linux-and-unix)
-3. [What is the difference between Linux and Windows?](Linux/Module1-Linux-Fundamentals.md#3-what-is-the-difference-between-linux-and-windows)
-4. [What is the Linux Kernel?](Linux/Module1-Linux-Fundamentals.md#4-what-is-the-linux-kernel)
-5. [What is a Shell in Linux?](Linux/Module1-Linux-Fundamentals.md#5-what-is-a-shell-in-linux)
-6. [What is the difference between sh, bash, and zsh?](Linux/Module1-Linux-Fundamentals.md#6-what-is-the-difference-between-sh-bash-and-zsh)
-7. [What are Environment Variables?](Linux/Module1-Linux-Fundamentals.md#7-what-are-environment-variables)
-8. [How to set and view environment variables?](Linux/Module1-Linux-Fundamentals.md#8-how-to-set-and-view-environment-variables)
-9. [What is the PATH variable?](Linux/Module1-Linux-Fundamentals.md#9-what-is-the-path-variable)
-10. [What is the difference between absolute and relative path?](Linux/Module1-Linux-Fundamentals.md#10-what-is-the-difference-between-absolute-and-relative-path)
-11. [What is the Linux directory structure?](Linux/Module1-Linux-Fundamentals.md#11-what-is-the-linux-directory-structure)
-12. [What is /etc directory used for?](Linux/Module1-Linux-Fundamentals.md#12-what-is-etc-directory-used-for)
-13. [What is /var directory used for?](Linux/Module1-Linux-Fundamentals.md#13-what-is-var-directory-used-for)
-14. [What is /tmp directory used for?](Linux/Module1-Linux-Fundamentals.md#14-what-is-tmp-directory-used-for)
-15. [What is /home directory used for?](Linux/Module1-Linux-Fundamentals.md#15-what-is-home-directory-used-for)
-16. [What is the difference between ~ (tilde) and / (root)?](Linux/Module1-Linux-Fundamentals.md#16-what-is-the-difference-between--tilde-and--root)
-17. [What is the root user?](Linux/Module1-Linux-Fundamentals.md#17-what-is-the-root-user)
-18. [How to check Linux version and distribution?](Linux/Module1-Linux-Fundamentals.md#18-how-to-check-linux-version-and-distribution)
 
----
+2. Explain Linux architecture (Kernel, Shell, User space).
 
-### Module 2: File Management & Permissions
-**File:** [Module2-File-Management-Permissions.md](Linux/Module2-File-Management-Permissions.md)
-**Questions:** 14 | **Commands:** 70+
 
-#### Question Index:
-1. [What are file permissions in Linux?](Linux/Module2-File-Management-Permissions.md#1-what-are-file-permissions-in-linux)
-2. [What is the difference between chmod 755 and 777?](Linux/Module2-File-Management-Permissions.md#2-what-is-the-difference-between-chmod-755-and-777)
-3. [What is the difference between soft link and hard link?](Linux/Module2-File-Management-Permissions.md#3-what-is-the-difference-between-soft-link-and-hard-link)
-4. [How to change file owner and group?](Linux/Module2-File-Management-Permissions.md#4-how-to-change-file-owner-and-group)
-5. [What is umask?](Linux/Module2-File-Management-Permissions.md#5-what-is-umask)
-6. [What is sticky bit?](Linux/Module2-File-Management-Permissions.md#6-what-is-sticky-bit)
-7. [What is /etc/passwd file?](Linux/Module2-File-Management-Permissions.md#7-what-is-etcpasswd-file)
-8. [What is /etc/shadow file?](Linux/Module2-File-Management-Permissions.md#8-what-is-etcshadow-file)
-9. [What is /etc/group file?](Linux/Module2-File-Management-Permissions.md#9-what-is-etcgroup-file)
-10. [What is the difference between su and sudo?](Linux/Module2-File-Management-Permissions.md#10-what-is-the-difference-between-su-and-sudo)
-11. [What is visudo?](Linux/Module2-File-Management-Permissions.md#11-what-is-visudo)
-12. [How to find files modified in the last 7 days?](Linux/Module2-File-Management-Permissions.md#12-how-to-find-files-modified-in-the-last-7-days)
-13. [What are hidden files in Linux?](Linux/Module2-File-Management-Permissions.md#13-what-are-hidden-files-in-linux)
-14. [How to give execute permission to a file?](Linux/Module2-File-Management-Permissions.md#14-how-to-give-execute-permission-to-a-file)
+3. What happens when you type a command and press Enter?
 
----
 
-### Module 3: Process & System Management
-**File:** [Module3-Process-System-Management.md](Linux/Module3-Process-System-Management.md)
-**Questions:** 12 | **Commands:** 65+
+4. What are environment variables? How to view/set them?
 
-#### Question Index:
-1. [What is the difference between a process and a thread?](Linux/Module3-Process-System-Management.md#1-what-is-the-difference-between-a-process-and-a-thread)
-2. [What is the difference between ps, top, and htop?](Linux/Module3-Process-System-Management.md#2-what-is-the-difference-between-ps-top-and-htop)
-3. [What is a zombie process?](Linux/Module3-Process-System-Management.md#3-what-is-a-zombie-process)
-4. [What is the difference between kill and kill -9?](Linux/Module3-Process-System-Management.md#4-what-is-the-difference-between-kill-and-kill--9)
-5. [How to run a process in the background?](Linux/Module3-Process-System-Management.md#5-how-to-run-a-process-in-the-background)
-6. [What is nohup command?](Linux/Module3-Process-System-Management.md#6-what-is-nohup-command)
-7. [What is screen command?](Linux/Module3-Process-System-Management.md#7-what-is-screen-command)
-8. [What are nice and renice commands?](Linux/Module3-Process-System-Management.md#8-what-are-nice-and-renice-commands)
-9. [How to check CPU and memory usage?](Linux/Module3-Process-System-Management.md#9-how-to-check-cpu-and-memory-usage)
-10. [What is load average in Linux?](Linux/Module3-Process-System-Management.md#10-what-is-load-average-in-linux)
-11. [What is swap memory?](Linux/Module3-Process-System-Management.md#11-what-is-swap-memory)
-12. [How to check which process is using the most CPU?](Linux/Module3-Process-System-Management.md#12-how-to-check-which-process-is-using-the-most-cpu)
+
+5. What are absolute vs relative paths?
+
+
+6. Explain Linux directory structure (/, /bin, /etc, /home, /var).
+
+
+7. What are the types of shells in Linux?
+
+
+8. What is the difference between shell and kernel?
+
+
+9. Explain file system hierarchy — where are configs, binaries, and logs kept?
+
+
+10. What is the difference between /root and /home directories?
+
+
+11. What is a Linux Kernel? Why is it important?
+
+
+12. What is a shell in Linux, and how is it different from bash?
+
+
+13. Basic components of Linux OS
+
+
+14. What is the init process in Linux?
+
+
+15. What is root?
+
+
+16. Check hostname
+
+
+17. Check current user
+
+
+18. Check current working directory
+
+
+
 
 ---
 
-### Module 4: Disk, Filesystem & Storage
-**File:** [Module4-Disk-Filesystem-Storage.md](Linux/Module4-Disk-Filesystem-Storage.md)
-**Questions:** 8 | **Commands:** 50+
+🟨 MODULE 2: File Management & Permissions — Easy–Moderate / 95–85% ask rate
 
-#### Question Index:
-1. [What is the difference between df and du?](Linux/Module4-Disk-Filesystem-Storage.md#1-what-is-the-difference-between-df-and-du)
-2. [What happens when disk is full vs when inodes are full?](Linux/Module4-Disk-Filesystem-Storage.md#2-what-happens-when-disk-is-full-vs-when-inodes-are-full)
-3. [What is the difference between lsblk and fdisk?](Linux/Module4-Disk-Filesystem-Storage.md#3-what-is-the-difference-between-lsblk-and-fdisk)
-4. [What is /etc/fstab file?](Linux/Module4-Disk-Filesystem-Storage.md#4-what-is-etcfstab-file)
-5. [How to mount and unmount a filesystem?](Linux/Module4-Disk-Filesystem-Storage.md#5-how-to-mount-and-unmount-a-filesystem)
-6. [What is LVM (Logical Volume Manager)?](Linux/Module4-Disk-Filesystem-Storage.md#6-what-is-lvm-logical-volume-manager)
-7. [What are the different filesystem types (ext4, xfs, btrfs)?](Linux/Module4-Disk-Filesystem-Storage.md#7-what-are-the-different-filesystem-types-ext4-xfs-btrfs)
-8. [How to find large files in Linux?](Linux/Module4-Disk-Filesystem-Storage.md#8-how-to-find-large-files-in-linux)
+19. What are file permissions (rwx)? Explain chmod 755 vs 777.
 
----
 
-### Module 5: Networking & Connectivity
-**File:** [Module5-Networking-Connectivity.md](Linux/Module5-Networking-Connectivity.md)
-**Questions:** 10 | **Commands:** 55+
+20. Types of permissions (Read, Write, Execute)
 
-#### Question Index:
-1. [What is an IP address, subnet mask, and gateway?](Linux/Module5-Networking-Connectivity.md#1-what-is-an-ip-address-subnet-mask-and-gateway)
-2. [How to check IP address in Linux?](Linux/Module5-Networking-Connectivity.md#2-how-to-check-ip-address-in-linux)
-3. [What are ports and how to check open ports?](Linux/Module5-Networking-Connectivity.md#3-what-are-ports-and-how-to-check-open-ports)
-4. [What is DNS and how does it work?](Linux/Module5-Networking-Connectivity.md#4-what-is-dns-and-how-does-it-work)
-5. [How to check network connectivity?](Linux/Module5-Networking-Connectivity.md#5-how-to-check-network-connectivity)
-6. [How to find which process is using a specific port?](Linux/Module5-Networking-Connectivity.md#6-how-to-find-which-process-is-using-a-specific-port)
-7. [What is SSH and how to use it?](Linux/Module5-Networking-Connectivity.md#7-what-is-ssh-and-how-to-use-it)
-8. [How to check active network connections?](Linux/Module5-Networking-Connectivity.md#8-how-to-check-active-network-connections)
-9. [What is a firewall? How to configure iptables/ufw?](Linux/Module5-Networking-Connectivity.md#9-what-is-a-firewall-how-to-configure-iptablesufw)
-10. [What is ARP (Address Resolution Protocol)?](Linux/Module5-Networking-Connectivity.md#10-what-is-arp-address-resolution-protocol)
 
----
+21. What is the difference between a Soft Link and a Hard Link?
 
-### Module 6: Services, Boot & Systemctl
-**File:** [Module6-Services-Boot-Systemctl.md](Linux/Module6-Services-Boot-Systemctl.md)
-**Questions:** 10 | **Commands:** 45+
 
-#### Question Index:
-1. [What is a Service in Linux?](Linux/Module6-Services-Boot-Systemctl.md#1-what-is-a-service-in-linux)
-2. [What is systemctl and how to use it?](Linux/Module6-Services-Boot-Systemctl.md#2-what-is-systemctl-and-how-to-use-it)
-3. [How to start, stop, and restart services?](Linux/Module6-Services-Boot-Systemctl.md#3-how-to-start-stop-and-restart-services)
-4. [How to check service status?](Linux/Module6-Services-Boot-Systemctl.md#4-how-to-check-service-status)
-5. [How to enable/disable services at boot?](Linux/Module6-Services-Boot-Systemctl.md#5-how-to-enabledisable-services-at-boot)
-6. [How to view service logs?](Linux/Module6-Services-Boot-Systemctl.md#6-how-to-view-service-logs)
-7. [What is systemd (Basic)?](Linux/Module6-Services-Boot-Systemctl.md#7-what-is-systemd-basic)
-8. [What is the Linux Boot Process (Basic)?](Linux/Module6-Services-Boot-Systemctl.md#8-what-is-the-linux-boot-process-basic)
-9. [How to troubleshoot a service that won't start?](Linux/Module6-Services-Boot-Systemctl.md#9-how-to-troubleshoot-a-service-that-wont-start)
-10. [Common services you should know (nginx, apache, ssh, mysql)](Linux/Module6-Services-Boot-Systemctl.md#10-common-services-you-should-know-nginx-apache-ssh-mysql)
+22. How do you change file ownership and group (chown, chgrp)?
+
+
+23. What is umask? What does it control?
+
+
+24. What is the sticky bit and where is it used (/tmp example)?
+
+
+25. What are /etc/passwd, /etc/shadow, and /etc/group used for?
+
+
+26. What is the difference between su and sudo?
+
+
+27. How do you safely edit the sudoers file (visudo)?
+
+
+28. How do you find recently modified files (find -mtime)?
+
+
+29. What are hidden files, and how to view them (ls -a)?
+
+
+30. Change file permissions using chmod
+
+
+31. Permissions to execute a script
+
+
+32. Create/manage symbolic links
+
+
+
 
 ---
 
-### Module 7: Security, Users & Access
-**File:** [Module7-Security-Users-Access.md](Linux/Module7-Security-Users-Access.md)
-**Questions:** 10 | **Commands:** 50+
+🟧 MODULE 3: Process & System Management — Moderate / 100–90% ask rate
 
-#### Question Index:
-1. [What is the difference between root user and regular user?](Linux/Module7-Security-Users-Access.md#1-what-is-the-difference-between-root-user-and-regular-user)
-2. [How to create a new user in Linux?](Linux/Module7-Security-Users-Access.md#2-how-to-create-a-new-user-in-linux)
-3. [How to delete a user in Linux?](Linux/Module7-Security-Users-Access.md#3-how-to-delete-a-user-in-linux)
-4. [How to change user password?](Linux/Module7-Security-Users-Access.md#4-how-to-change-user-password)
-5. [What is sudo and how to configure it?](Linux/Module7-Security-Users-Access.md#5-what-is-sudo-and-how-to-configure-it)
-6. [How to check login history of users?](Linux/Module7-Security-Users-Access.md#6-how-to-check-login-history-of-users)
-7. [What are user groups and how to manage them?](Linux/Module7-Security-Users-Access.md#7-what-are-user-groups-and-how-to-manage-them)
-8. [How to restrict SSH access?](Linux/Module7-Security-Users-Access.md#8-how-to-restrict-ssh-access)
-9. [What is the difference between /etc/passwd, /etc/shadow, and /etc/group?](Linux/Module7-Security-Users-Access.md#9-what-is-the-difference-between-etcpasswd-etcshadow-and-etcgroup)
-10. [Basic security best practices for Linux servers](Linux/Module7-Security-Users-Access.md#10-basic-security-best-practices-for-linux-servers)
+33. What is a process?
+
+
+34. Difference between process and thread.
+
+
+35. Explain ps, top, and htop commands.
+
+
+36. What is a Zombie process and how do you handle it?
+
+
+37. Difference between kill and kill -9
+
+
+38. How do you run a process in the background (&, nohup, screen)?
+
+
+39. What is the purpose of nice and renice?
+
+
+40. How to check which process is consuming the most CPU/memory?
+
+
+41. What is load average? Interpret uptime output.
+
+
+42. Explain swap memory and when it’s used.
+
+
+43. Check running processes
+
+
+44. Terminate process
+
+
+
+
+---
+
+🟦 MODULE 4: Disk, Filesystem & Storage — Moderate / 95–85% ask rate
+
+45. How do you check disk usage (df, du)?
+
+
+46. “No space left on device” but disk has space — what’s the issue (inodes)?
+
+
+47. What is the difference between disk full vs inode full?
+
+
+48. How do you check disk partitions (lsblk, fdisk -l)?
+
+
+49. What is /etc/fstab and its purpose?
+
+
+50. How do you check if a disk is mounted?
+
+
+51. How to mount/unmount file systems manually?
+
+
+52. What is LVM? Advantages of using it?
+
+
+53. Difference between ext4, xfs, and btrfs.
+
+
+54. How to find which directory is using the most space?
+
+
+55. Read first or last N lines of a file (head, tail)
+
+
+56. Combine two files (cat file1 file2 > file3)
+
+
+57. Find file type
+
+
+58. Sort file content
+
+
+
 
 ---
 
-### Module 8: Shell Scripting
-**File:** [Module8-Shell-Scripting.md](Linux/Module8-Shell-Scripting.md)
-**Questions:** 10 | **Commands:** 100+
+🟫 MODULE 5: Networking & Connectivity — Moderate / 90–80% ask rate
 
-#### Question Index:
-1. [What is a Shell Script?](Linux/Module8-Shell-Scripting.md#1-what-is-a-shell-script)
-2. [How to Create and Run a Shell Script](Linux/Module8-Shell-Scripting.md#2-how-to-create-and-run-a-shell-script)
-3. [What are Shell Variables?](Linux/Module8-Shell-Scripting.md#3-what-are-shell-variables)
-4. [What are Environment Variables vs Shell Variables?](Linux/Module8-Shell-Scripting.md#4-what-are-environment-variables-vs-shell-variables)
-5. [What is Shebang (#!/bin/bash)?](Linux/Module8-Shell-Scripting.md#5-what-is-shebang-usrbinbash)
-6. [How to Use Conditional Statements (if-else)](Linux/Module8-Shell-Scripting.md#6-how-to-use-conditional-statements-if-else)
-7. [How to Use Loops (for, while)](Linux/Module8-Shell-Scripting.md#7-how-to-use-loops-for-while)
-8. [How to Use Functions in Shell Script](Linux/Module8-Shell-Scripting.md#8-how-to-use-functions-in-shell-script)
-9. [How to Read User Input](Linux/Module8-Shell-Scripting.md#9-how-to-read-user-input)
-10. [How to Pass Arguments to a Script](Linux/Module8-Shell-Scripting.md#10-how-to-pass-arguments-to-a-script)
+59. How do you check which ports are listening (netstat, ss, lsof)?
+
+
+60. How to check if a remote server is reachable on a port (telnet, nc)?
+
+
+61. What is the SSH config file location?
+
+
+62. How do SSH keys work? (Public/private key auth)
+
+
+63. What is the difference between curl and wget?
+
+
+64. How do you check and restart the network service?
+
+
+65. Explain /etc/hosts and /etc/resolv.conf.
+
+
+66. How do you add a static route temporarily and permanently?
+
+
+67. What is the 3-way TCP handshake?
+
+
+68. How to check DNS resolution issues?
+
+
+69. Check IP/Server accessibility (ping IP_address)
+
+
+70. Get info about ports (netstat -l)
+
+
+71. Check specific open port (netstat -putan | grep port_number)
+
+
+72. Check network interfaces (ifconfig or netstat)
+
+
+73. Telnet vs SSH
+
+
+
 
 ---
 
-### Module 9: Cron Jobs & Scheduling
-**File:** [Module9-Cron-Jobs-Scheduling.md](Linux/Module9-Cron-Jobs-Scheduling.md)
-**Questions:** 10 | **Commands:** 80+
+🟥 MODULE 6: Service, Boot & Systemctl — Intermediate / 85–75% ask rate
 
-#### Question Index:
-1. [What is Cron?](Linux/Module9-Cron-Jobs-Scheduling.md#1-what-is-cron)
-2. [What is Crontab and How to Use It?](Linux/Module9-Cron-Jobs-Scheduling.md#2-what-is-crontab-and-how-to-use-it)
-3. [Understanding Cron Syntax](Linux/Module9-Cron-Jobs-Scheduling.md#3-understanding-cron-syntax)
-4. [Cron Special Characters (*, /, -, ,)](Linux/Module9-Cron-Jobs-Scheduling.md#4-cron-special-characters--)
-5. [How to Schedule Jobs with Cron](Linux/Module9-Cron-Jobs-Scheduling.md#5-how-to-schedule-jobs-with-cron)
-6. [How to View and List Cron Jobs](Linux/Module9-Cron-Jobs-Scheduling.md#6-how-to-view-and-list-cron-jobs)
-7. [How to Edit Crontab](Linux/Module9-Cron-Jobs-Scheduling.md#7-how-to-edit-crontab)
-8. [Cron Job Examples](Linux/Module9-Cron-Jobs-Scheduling.md#8-cron-job-examples)
-9. [How to Debug Cron Jobs](Linux/Module9-Cron-Jobs-Scheduling.md#9-how-to-debug-cron-jobs)
-10. [What are Cron Directories (/etc/cron.*)](Linux/Module9-Cron-Jobs-Scheduling.md#10-what-are-cron-directories-etccron)
+74. Explain Linux boot process (BIOS → GRUB → Kernel → Init → Systemd)
+
+
+75. What are systemd targets (runlevels)?
+
+
+76. Difference between systemctl and service commands
+
+
+77. How to check the status of a service?
+
+
+78. How to debug a failed service (systemctl status, journalctl)?
+
+
+79. How to enable/disable services at boot?
+
+
+80. What is /etc/systemd/system used for?
+
+
+81. How to create your own custom systemd service?
+
+
+82. What is journald, and how to filter logs?
+
+
+83. What is log rotation, and how does logrotate work?
+
+
+84. Daemon service
+
+
+85. Check service status
+
+
+86. Start/Stop service
+
+
+
 
 ---
+
+🟪 MODULE 7: Security, Users & Access — Intermediate / 80–70% ask rate
+
+87. How do you add or delete users/groups?
+
+
+88. How to lock or expire a user account?
+
+
+89. How to add a user to sudoers?
+
+
+90. What is SELinux/AppArmor, and how to check status?
+
+
+91. How to check and set password aging policy?
+
+
+92. What is chattr and how to make a file immutable?
+
+
+93. How to secure SSH access (key-only login, disable root, etc.)?
+
+
+94. What is fail2ban?
+
+
+95. What is setuid, setgid, and sticky bit?
+
+
+96. How do you check open file descriptor limits (ulimit)?
+
+
+
+
+---
+
+🟨 MODULE 8: Scheduling & Automation — Easy / 80–70% ask rate
+
+97. How to schedule tasks using cron?
+
+
+98. Difference between cron and at?
+
+
+99. How to list existing cron jobs (crontab -l)?
+
+
+100. How to schedule a backup script daily?
+
+
+101. What is the difference between cron and systemd timers?
+
+
+102. How to debug a failed cron job?
+
+
+103. How to use sleep, watch, or loops for repetition?
+
+
+104. Automate tasks/scripts (cron/at)
+
+
+105. Check scheduled cron jobs
+
+
+106. Cron job format
+
+
+107. Troubleshoot cron job
+
+
+
+
+---
+
+🟩 MODULE 9: Shell Scripting (Essential for DevOps) — Intermediate / 75–65% ask rate
+
+108. How to pass arguments to a shell script?
+
+
+109. Difference between $, $@, "$" and "$@"
+
+
+110. How do you check command exit status ($?)?
+
+
+111. What are set -e, set -u, set -o pipefail used for?
+
+
+112. Write a script to monitor disk usage > 80%
+
+
+113. How to run background jobs in a script and capture their PID?
+
+
+114. How to log script output with timestamps?
+
+
+115. How to read a config file line by line in bash?
+
+
+
+
+---
+
+🟦 MODULE 10: Troubleshooting & Scenarios — Moderate–High / 100–90% ask rate
+
+116. “Server is slow.” How do you investigate?
+
+
+117. “Disk is full.” How do you find and fix the issue?
+
+
+118. “Service is not starting.” How do you debug?
+
+
+119. “Can’t connect to port 80.” How to troubleshoot step-by-step?
+
+
+120. “Website is loading slowly.” How to debug performance?
+
+
+121. “SSH login is delayed.” How do you fix it?
+
+
+122. “High load average but CPU idle.” What could cause it?
+
+
+123. “Memory usage is high.” How do you find the culprit?
+
+
+124. “Logs not updating.” How do you check permissions and rotation?
+
+
+125. “Cron job didn’t run.” How do you debug?
+--- 
+
+
+DevOps & Cloud Computing
+Professional Task List
+
+Section 1: Theory & Concepts
+1 Write and learn all major network ports used in DevOps (SSH, HTTP, HTTPS, FTP, SMTP,
+DNS, MySQL, PostgreSQL, Docker, Kubernetes, etc.).
+2 Explore Domain Name System (DNS) and its records (A, AAAA, CNAME, MX, NS, TXT,
+PTR).
+3 Explore Network Load Balancer (NLB) and Application Load Balancer (ALB) with use cases.
+4 Explore HTTP methods, path-based hosting, name-based hosting, and HTTP status codes.
+5 Explore Warm Pool concept in an Auto Scaling Group (ASG).
+6 Understand the difference between IAM Policies and IAM Roles.
+7 Explore Object Storage and Block Storage with real-world examples.
+8 Explore Amazon RDS and Log Rotation concepts.
+9 Explore Cross-account S3 bucket sharing mechanism.
+Section 2: Practical / Hands-on Tasks
+1 Host a static website on an EC2 instance with HTTPS (Port 443).
+2 Create and configure a MariaDB server.
+3 Host a Java-based Student Management Application.
+4 Host a PHP-based Ticket Booking Application using LAMP stack.
+5 Host a WordPress website.
+6 Create three EC2 instances: nfs1, nfs2, webserver.
+7 Configure NFS on nfs1 and nfs2.
+8 Install Apache2 on webserver.
+9 Store website data on NFS storage.
+10 Serve website on port 8080.
+11 Expose application using Load Balancer mapping 8080 to 80.
+12 Install AWS CLI on local computer.
+13 Host static website on Amazon S3.
+14 Create and test S3 lifecycle policies.
+15 Design and deploy Three-Tier Architecture.
+16 Create Hosted Zone in Route 53.
+17 Create IAM user with EC2 access in Mumbai region.
+18 Write SOP for Git branching strategy.
+19 Apply Markdown formatting with author name and image.
+20 Host static website in Docker container.
+21 Create Dockerfile.
+22 Create docker-compose file and deploy application.
+23 Maintain document of all tool versions.
+Section 3: Interview Preparation
+1 Explain S3 Storage Classes and Lifecycle Policies.
+2 Explain Load Balancer in Cloud.
+3 Explain Auto Scaling Group.
+4 Explain IAM Service.
+5 Explain EC2 Instance Types.
+6 Explain NAT Gateway in VPC.
+7 Difference between NAT Gateway vs NAT Instance.
+8 Explain VPC Peering.
+9 Difference between NACL vs Security Group.
+10 Difference between IAM Roles vs IAM Policies.
+
