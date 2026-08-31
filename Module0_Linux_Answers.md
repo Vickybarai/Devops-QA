@@ -1,4 +1,107 @@
-# 🟩 MODULE 0: Linux Fundamentals (Core Concepts)
+# Linux Scenario-Based Interview Guide for Beginners
+
+## Introduction
+In Linux interviews, questions are rarely theoretical. Interviewers present scenarios based on their current company infrastructure. The key to success is understanding the underlying logic of a scenario, as one question will naturally lead to the next. Always align your preparation with the specific technologies mentioned in the Job Description (JD).
+
+---
+
+## 1. Server Maintenance and Patching
+
+**Scenario:** "I have a working Linux server. I want to update its kernel and patch the whole server. What commands will you use?"
+
+**The Trap:** The interviewer has not specified the Linux distribution (e.g., Ubuntu, RedHat, CentOS).
+
+**Correct Approach:** 
+Never guess the operating system. Clarify the environment first. 
+> *"Since the distribution is not specified, if it is Debian/Ubuntu-based, I would use `apt update && apt upgrade`. If it is RedHat/CentOS-based, I would use `yum update && yum upgrade`."*
+
+**Linked Follow-up Question:** "What is the difference between `update` and `upgrade`?"
+*   **`update`:** Downloads the package metadata from the repositories. It tells the system what updates are available but does not install them (similar to an app store notification).
+*   **`upgrade`:** Actually downloads and installs the patches fetched by the update command.
+
+---
+
+## 2. Process Management
+
+**Scenario:** "I have a process currently running in the foreground. How do I run it in the background instead?"
+
+**Answer (Two Tiers):**
+*   **Basic Method:** Append an ampersand (`&`) to the end of the command (e.g., `python app.py &`).
+*   **Enterprise Method:** Create a systemd service file (a `.service` file) in the `/etc/systemd/system/` directory. This converts the script into a daemon (a persistent background service) that can be managed using `systemctl start <service-name>` and `systemctl stop <service-name>`.
+
+**Linked Follow-up Question:** "What are the standard names for background daemons?"
+*   SSH Daemon: `sshd`
+*   Nginx Daemon: `nginx`
+*   Apache Daemon: `httpd`
+*   FTP Daemon: `vsftpd`
+
+---
+
+## 3. Enterprise Services and Default Ports
+
+Companies run specific services on Linux servers. You must know the purpose of the service and its default port numbers.
+
+| Service | Full Form | Purpose | Default Port(s) |
+| :--- | :--- | :--- | :--- |
+| **SMTP** | Simple Mail Transfer Protocol | Used to route and send email alerts from applications (e.g., OTPs, system alerts). | 25, 587 |
+| **LDAP** | Lightweight Directory Access Protocol | A Linux-based identity server used for centralized user authentication (Linux alternative to Windows Active Directory). | 389 |
+| **FTP** | File Transfer Protocol | Transfers files between a client and server over a network. Allows administrators to set specific permissions (e.g., Client A can only upload, Client B can only download). Used for website management and backups. | 20 (Data), 21 (Control) |
+
+---
+
+## 4. Troubleshooting and Log Management
+
+**Scenario A:** "How do you investigate what is happening inside a Linux server?"
+
+**Answer:** Use the `journalctl` command to view live and historical system logs.
+
+**Linked Follow-up Question:** "What is the difference between plain logs and raw logs?"
+*   **Plain Logs:** Simple text files showing basic events (e.g., "Process A was called").
+*   **Raw Logs:** Systematic, highly detailed logs containing metadata, user execution details, and exact system calls made by the process.
+
+**Scenario B: The OOM Killer Error**
+*Context:* "I deployed a MySQL database on a 4GB RAM server. It worked yesterday, but today the database crashed. The logs show an 'OOM Killer' error. What happened and how do you fix it?"*
+
+**Definition:** OOM stands for "Out Of Memory." When physical RAM reaches 100% utilization, the Linux kernel activates the OOM Killer to save the operating system from crashing. It forcefully terminates the process consuming the highest amount of RAM (in this case, MySQL).
+
+**Resolution Steps:**
+1.  **Increase Physical RAM:** Upgrade the server hardware.
+2.  **Configure Swap Memory:** Allocate virtual memory on the hard disk to act as an overflow buffer when physical RAM is exhausted.
+3.  **Limit Application Memory:** Modify the database configuration file to hard-cap its maximum RAM usage (e.g., restrict MySQL to use only 2.5GB, leaving room for the OS).
+
+*Note: Lowering the process "Nice" value (priority) will not solve an OOM error. Priority only dictates which process gets CPU time first, not how much RAM it is allowed to consume.*
+
+---
+
+## 5. Storage and System Architecture
+
+**Scenario A:** "I have a 100GB volume. How do I increase the size of an *existing* partition?"
+
+**Answer:** Use Logical Volume Manager (LVM) commands. First, extend the logical volume using `lvextend`, and then resize the filesystem using `resize2fs` (for ext4 file systems) or `xfs_growfs` (for XFS file systems).
+
+**Scenario B:** "Have you worked on Red Hat Linux?"
+
+**Approach:** Answer honestly based on your experience. However, demonstrate industry awareness by knowing the current version landscapes:
+*   **Debian Family:** Ubuntu (Current LTS versions: 22.04, 24.04)
+*   **RedHat Family:** RHEL (Currently on version 9/10), AlmaLinux, Rocky Linux, SUSE.
+
+---
+
+## Interview Strategy: Connecting the Dots
+Beginners memorize isolated answers. Professionals connect scenarios. Expect an interview flow similar to this:
+
+1.  **Interviewer:** Where is Linux used in your current company?
+    *   **You:** We use it for SMTP and LDAP services.
+2.  **Interviewer:** What port does LDAP use?
+    *   **You:** Port 389.
+3.  **Interviewer:** If LDAP stops responding, how do you troubleshoot it?
+    *   **You:** I check the service status using `systemctl` and review the logs using `journalctl`.
+4.  **Interviewer:** What if the LDAP process keeps crashing?
+    *   **You:** I would check the logs specifically for "OOM Killer" errors to see if the server has run out of memory.
+
+  
+  
+  🟩 MODULE 0: Linux Fundamentals (Core Concepts)
 
 ## Q1. What is Linux? Difference between Linux, UNIX, and Windows?
 
