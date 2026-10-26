@@ -31,8 +31,7 @@
 > During that time, I also got the opportunity to deploy an application on AWS, which introduced me to how servers, cloud infrastructure, and deployment pipelines work. That experience sparked my interest in Cloud and DevOps practices.
 >
 > To strengthen my knowledge practical experience, I then completed a DevOps Engineering Internship at HisanLabs Pvt. Ltd., where I contributed to cloud infrastructure automation, CI/CD pipeline management, containerization using Docker, and system administration tasks."
-
-**, where I learned Linux fundamentals, AWS core services such as EC2, VPC, and IAM, along with tools like Git and Docker.
+>**, where I learned Linux fundamentals, AWS core services such as EC2, VPC, and IAM, along with tools like Git and Docker.
 
 > Currently, I'm focusing on hands-on practice, improving my understanding of cloud infrastructure, automation, and deployment workflows.
 
