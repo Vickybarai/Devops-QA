@@ -27,7 +27,7 @@ Best when the interviewer asks for a brief introduction.
 
 Good morning, sir.
 
-My name is Vicky Barai, and I am from Nagpur, Maharashtra. I have completed my BCA and MCA, and I am focused on building my career in DevOps and Cloud Computing.
+My name is -, and I am from Nagpur, Maharashtra. I have completed my BCA and MCA, and I am focused on building my career in DevOps and Cloud Computing.
 
 I have worked on practical projects involving CI/CD pipelines using Jenkins and GitHub Actions, AWS cloud services, Docker, Kubernetes, and Terraform. I also have working knowledge of Linux, Git, and Shell scripting.
 
@@ -40,13 +40,6 @@ Thank you.
 
 Best for quick introductions or networking.
 
-Hi, my name is Vicky Barai, and I am from Nagpur. I have completed my MCA and am focused on DevOps and Cloud Computing, with practical experience in CI/CD, AWS, Docker, Kubernetes, and Terraform. I am looking for an entry-level DevOps Engineer opportunity to start my professional career.
+Hi, my name is - , and I am from Nagpur. I have completed my MCA and am focused on DevOps and Cloud Computing, with practical experience in CI/CD, AWS, Docker, Kubernetes, and Terraform. I am looking for an entry-level DevOps Engineer opportunity to start my professional career.
 ---
 
-How to Practise These Introductions
-
-Version	Your objective	What to emphasize
-
-Standard	Explain your profile and technical background	CI/CD, AWS, Docker, Kubernetes
-Short	Communicate your profile quickly	Core skills and target role
-Ultra-short	Create a clear first impression	Education, domain, and career objective.
