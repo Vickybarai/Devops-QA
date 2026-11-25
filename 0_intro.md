@@ -28,11 +28,24 @@
 >  * Server Administration & Support: Managing Ubuntu Linux servers, configuring Nginx reverse proxies, and troubleshooting deployment or environment bottlenecks for developers and QA engineers.
 >  * Monitoring: Setting up CloudWatch alarms and Datadog dashboards to track CPU, memory, and disk utilization.”
 > 
-5. What are your day-to-day responsibilities?
-> “My typical day revolved around proactive monitoring and supporting active development releases:
->  * Morning Health Checks: First thing after logging in, I checked emails, Jira tickets, and monitoring dashboards in Datadog and AWS CloudWatch to ensure all servers, databases, and containers were healthy overnight.
->  * Deployment & Pipeline Support: I reviewed failed CI/CD builds, helped developers debug environment or configuration issues on staging servers, and deployed updated builds for QA testing.
->  * Infrastructure & Maintenance: During the day, I worked on assigned Jira tasks—such as writing or updating Terraform modules, adjusting Security Group rules, managing backups, or optimizing server configurations—while coordinating with the team to clarify requirements before pushing changes.”
+___
+5.What are your day-to-day responsibilities?
+Part 1: Internship Level Response
+
+> “My daily routine focused on proactive monitoring and supporting active development releases:
+>  * Morning Health Checks: Checking monitoring dashboards in AWS CloudWatch to verify server health, CPU/memory spikes, and disk utilization on our Ubuntu Linux instances. If a container was failing, I inspected the logs first and escalated code-level issues to the developers.
+>  * Support Tickets: Checking Jira for daily support requests from developers and QA. This usually involved fixing broken CI/CD builds—caused by things like expired credentials or environment variable mismatches—and deploying updated builds to staging environments.
+>  * Infrastructure Tasks: Working on planned infrastructure changes using Terraform by creating a feature branch, running terraform plan, and raising a pull request for senior review.”
+> 
+Part 2: Experienced Level Response
+What are your day-to-day responsibilities?
+> “My day is structured around proactive cluster governance and reactive incident resolution:
+>  * Observability Review: Analyzing Prometheus alerts and Grafana dashboards to identify resource bottlenecks, memory leaks, or abnormal traffic patterns across clusters.
+>  * Pipeline Governance & Support: Troubleshooting complex pipeline failures, managing runner scalability, and assisting engineering teams with deployment configurations.
+>  * Infrastructure Evolution: Reviewing and merging Terraform pull requests for infrastructure changes, executing scheduled database migrations, and performing cost-optimization audits to right-size compute resources.”
+> 
+Note: The internship answer emphasizes executing assigned tasks, maintaining staging environments, and escalating code-level issues under supervision, whereas the experienced answer highlights full architectural ownership, production cluster governance, and proactive optimization.
+___
 > 
 6. Explain one production issue you handled
 (The Load Balancer health check example from your notes is a classic, realistic DevOps scenario—here is how to frame it cleanly using the STAR method).
